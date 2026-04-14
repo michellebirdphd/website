@@ -1,39 +1,37 @@
 # Simple GitHub Pages Website
 
-This project is a lightweight static website designed to deploy cleanly to
-GitHub Pages through GitHub Actions.
+This is a basic static website (HTML + CSS + a tiny JS file).
 
-## Structure
+## Files you will edit most
 
-- `index.html` is the landing page.
-- `blog/` contains the blog index and individual post pages.
-- `projects/` contains the projects index and individual project pages.
-- `styles.css` contains the shared site styling.
-- `scripts/site.js` contains the small shared JavaScript used by the pages.
-- `.github/workflows/deploy-pages.yml` publishes the site to GitHub Pages when
-  changes are pushed to `main`.
+- `index.html` → homepage content
+- `blog/index.html` → blog list page
+- `projects/index.html` → projects list page
+- `styles.css` → all shared design styles
 
-## Editing content
+## Quick edit workflow (beginner-friendly)
 
-To add a new blog post:
+1. Open the repo in your editor.
+2. Change text in an `.html` file.
+3. Change colors/fonts/spacing in `styles.css`.
+4. Save.
+5. Preview locally:
 
-1. Create a new HTML file in `blog/`.
-2. Copy the structure from an existing post like `blog/starting-small.html`.
-3. Add a new card linking to it in `blog/index.html`.
+```bash
+python3 -m http.server 8000
+```
 
-To add a new project page:
+Then open: `http://localhost:8000`
 
-1. Create a new HTML file in `projects/`.
-2. Copy the structure from an existing project like `projects/north-window.html`.
-3. Add a new card linking to it in `projects/index.html`.
+## Publish to GitHub Pages
 
-## GitHub Pages setup
+1. Commit your changes.
+2. Push to `main` on GitHub.
+3. Wait for the GitHub Actions Pages workflow to finish.
+4. Open your live site URL.
 
-After pushing this repository to GitHub:
+## Current site structure
 
-1. Open the repository on GitHub.
-2. Go to `Settings` > `Pages`.
-3. Under `Build and deployment`, set `Source` to `GitHub Actions`.
-4. Push to `main` or run the workflow manually from the `Actions` tab.
-
-GitHub Actions will publish the repository contents as a static site.
+- Home: overview + featured blog/paper
+- Blog: article index + individual post pages
+- Projects: project index + individual project pages

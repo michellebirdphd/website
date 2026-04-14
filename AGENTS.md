@@ -27,6 +27,18 @@ When the user gives feedback on the preview:
 
 For static HTML/CSS/JavaScript changes, the preview updates automatically when the browser is refreshed.
 
+## Asset Privacy
+
+When the user provides photos, papers, PDFs, documents, or other assets for the site:
+
+1. Check the file for personal or identifying metadata before committing it.
+2. Look especially for location data, GPS coordinates, camera/device details, author names, comments, revision history, document properties, and embedded paths.
+3. Strip unnecessary metadata from the website copy whenever practical.
+4. Keep only metadata that is required for the asset to display or function correctly.
+5. If any personal, identifying, or location information remains, ask the user before staging or committing that asset.
+
+For images, use local tools such as `sips`, `file`, `mdls`, or another available metadata tool. For documents and papers, inspect document properties or exported metadata before adding them to the site.
+
 ## Publish Workflow
 
 When the user says they are happy and wants to publish, deploy, push, or make the site live:
