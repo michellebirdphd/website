@@ -291,6 +291,17 @@ p:last-child {
   box-shadow: 0 12px 24px rgba(189, 75, 57, 0.2);
 }
 
+.button-red {
+  color: white;
+  background: var(--accent-warm);
+  box-shadow: 0 10px 22px rgba(189, 75, 57, 0.2);
+}
+
+.button-red:hover {
+  background: #9f3828;
+  box-shadow: 0 12px 24px rgba(159, 56, 40, 0.24);
+}
+
 .button-secondary {
   background: rgba(255, 255, 255, 0.76);
   border: 1px solid var(--line);
@@ -572,6 +583,11 @@ p:last-child {
 .article-authors {
   color: var(--muted);
   font-weight: 700;
+}
+
+.article-affiliation {
+  margin-top: -0.4rem;
+  color: var(--muted);
 }
 
 .strategy-list,
