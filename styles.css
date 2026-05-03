@@ -602,6 +602,13 @@ p:last-child {
 
 .reference-list {
   font-size: 0.9rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.reference-list li {
+  padding-left: 2rem;
+  text-indent: -2rem;
 }
 
 .reference-list a {
